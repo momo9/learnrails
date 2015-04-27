@@ -12,5 +12,12 @@
         </td>
     </tr>
 </table>
+
+<h2>Comments: </h2>
+<%= render @article.comments %>
+
+<h2>Add a comment: </h2>
+<%= render 'comments/form' %>
+
 <%= link_to 'back', articles_path %> |
 <%= link_to 'edit', edit_article_path(@article) %>

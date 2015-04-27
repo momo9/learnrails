@@ -1,0 +1,16 @@
+<%= form_for([@article, @article.comments.build]) do |f| %>
+<table>
+    <tr>
+        <td><%= f.label :commenter %></td>
+        <td><%= f.text_field :commenter %></td>
+    </tr>
+    <tr>
+        <td><%= f.label :body %></td>
+        <td><%= f.text_area :body %></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><%= f.submit "Submit" %></td>
+    </tr>
+</table>
+<% end %>
